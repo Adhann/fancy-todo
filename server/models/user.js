@@ -31,7 +31,15 @@ module.exports = (sequelize, DataTypes) => {
         msg: 'Email already registered'
       }
     },
-    password: DataTypes.STRING
+    password: {
+      type: DataTypes.STRING,
+      validate: {
+        len: {
+          args: [6],
+          msg: 'Minimum password length of 6 characters'
+        }
+      }
+    }
   }, {
     hooks: {
       beforeCreate: (user, opt) => {

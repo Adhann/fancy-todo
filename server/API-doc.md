@@ -531,50 +531,8 @@ input format :
     ```json
     {
         "data": [
-            {
-                "rh": 66,
-                "pod": "d",
-                "lon": 106.84513,
-                "pres": 1003.1,
-                "timezone": "Asia/Jakarta",
-                "ob_time": "2021-02-06 10:30",
-                "country_code": "ID",
-                "clouds": 59,
-                "ts": 1612607400,
-                "solar_rad": 25.6,
-                "state_code": "04",
-                "city_name": "Jakarta",
-                "wind_spd": 1.5,
-                "wind_cdir_full": "north",
-                "wind_cdir": "N",
-                "slp": 1006,
-                "vis": 5,
-                "h_angle": -90,
-                "sunset": "11:17",
-                "dni": 209.18,
-                "dewpt": 23,
-                "snow": 0,
-                "uv": 1.91101,
-                "precip": 0,
-                "wind_dir": 360,
-                "sunrise": "22:55",
-                "ghi": 29.56,
-                "dhi": 27.11,
-                "aqi": 54,
-                "lat": -6.21462,
-                "weather": {
-                    "icon": "c02d",
-                    "code": 802,
-                    "description": "Scattered clouds"
-                },
-                "datetime": "2021-02-06:11",
-                "temp": 30,
-                "station": "WIHH",
-                "elev_angle": 3.27,
-                "app_temp": 34.2
-            }
-        ],
-        "count": 1
+            "<weather_data>"
+        ]
     }
     ```
 

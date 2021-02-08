@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
+    "dev": "SET NODE_ENV=development&&nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Adhann",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",

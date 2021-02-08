@@ -28,14 +28,16 @@ class UserController {
       if (!user) throw { name: 'Error400', status: 400, msg: 'Invalid email or password' }
       
       const comparedPassword = comparePass(password, user.password)
-      if (!comparedPassword || !user) throw { name: 'Error400', status: 400, msg: 'Invalid email or password' }
+      if (!comparedPassword) throw { name: 'Error400', status: 400, msg: 'Invalid email or password' }
 
       const accessToken = generateToken({
         id: user.id,
         email: user.email
       })
       
-      res.status(200).json({ accessToken })
+      const email = user.email.split('@')
+      
+      res.status(200).json({ accessToken, email: email[0]})
     })
     .catch((err) => {
       console.log(err);

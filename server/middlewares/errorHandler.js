@@ -1,9 +1,9 @@
 const errorHandler = (err, req, res, next) => {
-  console.log(err, "<<< error handler");
-  console.log(err.name, "<<< error name handler");
-  console.log(err.status, "<<< error status");
-  console.log(err.msg, "<<< error msg");
-  console.log(err.errors, "<<< errors");
+  // console.log(err, "<<< error handler");
+  // console.log(err.name, "<<< error name handler");
+  // console.log(err.status, "<<< error status");
+  // console.log(err.msg, "<<< error msg");
+  // console.log(err.errors, "<<< errors");
   if (err.name === 'SequelizeValidationError' || err.name === 'SequelizeUniqueConstraintError') {
     const errors = err.errors.map(el => el.message)
     res.status(400).json({ errors : errors })
